@@ -1,1 +1,1 @@
-# m7-hw7-terry-julia1
+# m7-hw7-terry-julia
