@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #06b3bc;
+  --primary-color: #355E3B;
   --text-color: #042d2f;
   --text-color-lighter: #074c50;
-  --secondary-color: #F78828;
+  --secondary-color: #A9BA9D;
   --warn-color: #FDD219;
   --danger-color: #FA5456;
   --white: #FFFFFF;
@@ -71,7 +71,7 @@ main > section, main > article {
 }
 
 main > section.hero {
-  height: 300px;
+  height: 200px;
   background-image: url(https://picsum.photos/1920/1000);
   background-size: cover;
   background-position: center;
@@ -80,8 +80,13 @@ main > section.hero {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  /* make this banner stick to the top! */
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+  /* make this banner stick to the top! */
+
 
 section.hero > .call-to-action {
   font-size: 2rem;
@@ -106,6 +111,11 @@ main article {
 main p {
   line-height: 1.75;
   margin-bottom: 48px;;
+}
+
+article p::first-letter {
+  font-size: xxx-large;
+  color: #355E3B;
 }
 
 main > article img {
