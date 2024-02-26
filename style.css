@@ -135,31 +135,55 @@ footer {
   color: var(--off-white);
 }
 
-/* tooltip code below */
-
+/* Tooltip code */
 span.tooltip {
   color: var(--danger-color);
   position: relative;
   cursor: pointer;
 }
 
-/* underline span on hover/focus */
+/* Underline span on hover/focus */
 span.tooltip:hover,
 span.tooltip:focus {
   text-decoration: underline;
+  color: #355E3B;
 }
-/* show tooltip on hover/focus */
+
+/* Show tooltip on hover/focus */
 span.tooltip:hover > span,
 span.tooltip:focus > span {
   display: inline;
-}
+  position: absolute;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 1; 
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+ }
 
-/* styling for tooltip bubble */
+/* Styling for tooltip bubble */
 span.tooltip span {
   display: none;
+  background-color: #A9BA9D;
+  color: var(--text-color);
 }
 
-/* styling for tooltip bubble arrow */
+/* Styling for tooltip bubble arrow */
 span.tooltip span::after {
   content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+ top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #A9BA9D transparent transparent transparent;
+}
+
 }
